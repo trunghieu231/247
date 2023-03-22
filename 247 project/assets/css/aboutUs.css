@@ -26,6 +26,20 @@ a.breadcrumb-item{
     font-size: 20px;
     line-height: 136.5%;
 }
+li.breadcrumb-item{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 136.5%;
+    color: white;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #d9d9d9;
+    margin-right: 2px;
+}
+
 p.about-header{
     color: white;
     font-family: 'Raleway';
@@ -40,3 +54,40 @@ p.about-header{
     margin-top: 26px;
     margin-bottom: 64px;
 }
+#row-benefits-about{
+    margin-top: 64px;
+    border-radius: 30px;
+}
+.more-info .about-box{
+    gap:unset;
+}
+/*Begin history and grew up*/
+#history-grew-up{
+    margin-top: 64px;
+}
+h1.history-grewUp{
+    color: #005BDE;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+h2.history-grewUp{
+    color: #292E35;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 32px;
+}
+p.history-grewUp{
+    margin-top: 16px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 136.5%;
+}
+/*End history and grew up*/

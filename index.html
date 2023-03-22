@@ -34,33 +34,43 @@
 </head>
 
 <body>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="header container-fluid d-flex align-items-center justify-content-evenly">
-      <div class="logo">
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/Logo.png" alt="" title="">
-          </div>
-        </div>
-      </div>
-      <nav id="navbar" class="navbar order-last order-lg-0 justify-content-end">
-        <ul>
-          <li><a class="nav-link" href="about.html">About 247</a></li>
-          <li><a class="nav-link">Our Services</a></li>
-          <li><a class="nav-link">Portfolio</a></li>
-          <li><a class="nav-link">Our Network</a></li>
-          <li><a class="nav-link">Contact</a></li>
-          <div class="flag">
-            <img src="assets/img/Flag/Flag.svg" alt="" title="">
-            <img src="assets/img/Flag/Flag1.svg" alt="" title="">
-          </div>
-        </ul>
-      </nav>
-    </div>
-  </header><!-- End Header -->
+      <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+	    <div class="container">
+	      <img src="assets/img/Logo.png">
+	      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- ======= Hero Section ======= -->
+	      <div class="collapse navbar-collapse" id="nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="index.html" class="nav-link">About 247</a></li>
+	          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+              	<a class="dropdown-item" href="shop.html">Shop</a>
+              	<a class="dropdown-item" href="wishlist.html">Wishlist</a>
+                <a class="dropdown-item" href="product-single.html">Single Product</a>
+                <a class="dropdown-item" href="cart.html">Cart</a>
+                <a class="dropdown-item" href="checkout.html">Checkout</a>
+              </div>
+            </li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">Portfolio</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Our Network</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+            <div class="flag">
+                <img src="assets/img/Flag/Flag.svg" title="">
+                <img src="assets/img/Flag/Flag1.svg" title="">
+              </div>
+	      </div>
+          
+	    </div>
+	  </nav>
+    <!-- Navbar End -->
+
+
+    <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -84,8 +94,8 @@
       </div>
     </div>
   </section>
-  
-  <!-- ======= Our Services ======= -->
+
+
   <section id="services">
     <div class="our-services">
       <div class="service-title container" data-aos="fade-up">
@@ -152,8 +162,7 @@
     </div>
   </section>
 
-
-  <section class="more-info" id="more-info">
+  <section class="more-info" id="more-info" style="background-image: url(assets/img/8.svg);">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -195,13 +204,13 @@
               </div>
               <div class="row">
                 <div class="col-md-4">
-                  <div class="benefit-item">
+                  <div class="benefit-item" style="border-left: 0px">
                     <div class="benefit-pic">
                       <img src="assets/img/benefits/3 icon.svg">
                     </div>
-                    <div class="benefit-text">
-                      <p class="benefit-text">Increase revenue
-                        Join us to succeed</p>
+                    <div class="benefit-text"> 
+                      <p class="benefit-text">Increase revenue</p>
+                      <p class="benefit-text" style="line-height: 1px;">Join us to succeed</p>     
                     </div>
                   </div>
                 </div>
@@ -236,162 +245,64 @@
 
   <section class="portfolio" id="portfolio" style="background-image: url(assets/img/Logo-background.svg); background-color: #292E35;">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <img src="assets/img/Logo247.svg" alt="">
-            <h2>Portfolio</h2>
-          </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <img src="assets/img/Logo247.svg" alt="">
+                    <h2>Portfolio</h2>
+                </div>
+            </div>
         </div>
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <img src="assets/images/courses-01.jpg" alt="Course #1">
-            <div class="down-content">
-              <h4>Digital Marketing</h4>
-              <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
-              <div class="author-image">
-                <img src="assets/images/author-01.png" alt="Author 1">
-              </div>
-              <div class="text-button-pay">
-                <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-              </div>
+    </div>
+    <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border p-2 mx-auto mb-3" src="assets/img/portfolio/Qatar.png">
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border p-2 mx-auto mb-3" src="assets/img/portfolio/Gulf Air.png">
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border p-2 mx-auto mb-3" src="assets/img/portfolio/Etihad.png">
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border p-2 mx-auto mb-3" src="assets/img/portfolio/Malaysia.png">
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border p-2 mx-auto mb-3" src="assets/img/portfolio/Airasia.png">
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
             </div>
+  </section>
+
+  <section class="network" id="network" style="background-image: url(assets/img/8.svg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-heading">
+            <img src="assets/img/Logo247.svg" alt="" title="">
+            <h2>Our Network</h2>
           </div>
-          <div class="item">
-            <img src="assets/images/courses-02.jpg" alt="Course #2">
-            <div class="down-content">
-              <h4>Business World</h4>
-              <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
-              <div class="author-image">
-                <img src="assets/images/author-02.png" alt="Author 2">
-              </div>
-              <div class="text-button-free">
-                <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/courses-03.jpg" alt="Course #3">
-            <div class="down-content">
-              <h4>Media Technology</h4>
-              <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-              <div class="author-image">
-                <img src="assets/images/author-03.png" alt="Author 3">
-              </div>
-              <div class="text-button-pay">
-                <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/courses-04.jpg" alt="Course #4">
-            <div class="down-content">
-              <h4>Communications</h4>
-              <p>Download free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
-              <div class="author-image">
-                <img src="assets/images/author-04.png" alt="Author 4">
-              </div>
-              <div class="text-button-free">
-                <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/courses-05.jpg" alt="">
-            <div class="down-content">
-              <h4>Business Ethics</h4>
-              <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-              <div class="author-image">
-                <img src="assets/images/author-05.png" alt="">
-              </div>
-              <div class="text-button-pay">
-                <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/courses-01.jpg" alt="">
-            <div class="down-content">
-              <h4>Photography</h4>
-              <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
-              <div class="author-image">
-                <img src="assets/images/author-01.png" alt="">
-              </div>
-              <div class="text-button-free">
-                <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/courses-02.jpg" alt="">
-            <div class="down-content">
-              <h4>Web Development</h4>
-              <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-              <div class="author-image">
-                <img src="assets/images/author-02.png" alt="">
-              </div>
-              <div class="text-button-free">
-                <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/courses-03.jpg" alt="">
-            <div class="down-content">
-              <h4>Learn HTML CSS</h4>
-              <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
-              <div class="author-image">
-                <img src="assets/images/author-03.png" alt="">
-              </div>
-              <div class="text-button-pay">
-                <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/courses-04.jpg" alt="">
-            <div class="down-content">
-              <h4>Social Media</h4>
-              <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-              <div class="author-image">
-                <img src="assets/images/author-04.png" alt="">
-              </div>
-              <div class="text-button-pay">
-                <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/courses-05.jpg" alt="">
-            <div class="down-content">
-              <h4>Digital Arts</h4>
-              <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
-              <div class="author-image">
-                <img src="assets/images/author-05.png" alt="">
-              </div>
-              <div class="text-button-free">
-                <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/courses-01.jpg" alt="">
-            <div class="down-content">
-              <h4>Media Streaming</h4>
-              <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-              <div class="author-image">
-                <img src="assets/images/author-01.png" alt="">
-              </div>
-              <div class="text-button-pay">
-                <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-              </div>
-            </div>
+          <div class="network">
+            <img src="assets/img/Network.png">
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
 
 </body>

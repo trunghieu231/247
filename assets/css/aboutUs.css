@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../fonts/Lato-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+#container-body-About{
+    background-color:#005BDE ;
+}
+.breadcrumb-menu{
+    text-decoration: none;
+    color: white;
+}
+h1.about-header{
+    color: white;
+    font-family: 'Raleway';
+    font-style: normal;
+    height: 42px; 
+    width: 1170px;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 300;
+}
+a.breadcrumb-item{
+    color: white;
+    text-decoration: none;
+    width: 53px;
+    height: 27px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 136.5%;
+}
+li.breadcrumb-item{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 136.5%;
+    color: white;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #d9d9d9;
+    margin-right: 2px;
+}
+
+/*Begin about us box*/
+.about-box{
+    border-radius: 30px;
+}
+#about{
+    padding-bottom: 2.218%;
+}
+p.about-header{
+    color: white;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+.line-under-home{
+    color: #F1FAFF;
+    opacity: 0.3;
+    margin-top: 26px;
+    margin-bottom: 64px;
+}
+.more-info .about-box{
+    gap:unset;
+}
+/*End about us box*/
+/*Begin history and grew up*/
+#history-grew-up{
+    margin-top: 64px;
+}
+h1.history-grewUp{
+    color: #005BDE;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+h2.history-grewUp{
+    color: #292E35;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 32px;
+}
+p.history-grewUp{
+    margin-top: 16px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 136.5%;
+}
+/*End history and grew up*/
+/*Begin benefits about*/
+#row-benefits-about{
+    margin-top: 64px;
+    border-radius: 30px;
+    border-bottom: 64px;
+}
+.benefit-item-increase{
+    border-left: none;
+}
+/*End benefits about*/

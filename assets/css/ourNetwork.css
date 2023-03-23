@@ -1,5 +1,5 @@
 #container-body-ourNetwork{
-    background-color: blue;
+    background-color: #005BDE;
 }
 .ourNetwork-header{
     color: white;
@@ -19,6 +19,9 @@
     margin-bottom: 64px;
 }
 .network{
-    background-color: blue;
+    background-color: #005BDE;
     margin-bottom: 128px;
+}
+.network img{
+    width: 100%;
 }

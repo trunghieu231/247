@@ -52,6 +52,9 @@ li.breadcrumb-item{
 .about-box{
     border-radius: 30px;
 }
+#about{
+    padding-bottom: 2.218%;
+}
 p.about-header{
     color: white;
     font-family: 'Raleway';
@@ -104,5 +107,9 @@ p.history-grewUp{
 #row-benefits-about{
     margin-top: 64px;
     border-radius: 30px;
+    border-bottom: 64px;
+}
+.benefit-item-increase{
+    border-left: none;
 }
 /*End benefits about*/

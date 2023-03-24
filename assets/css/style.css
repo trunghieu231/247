@@ -421,6 +421,14 @@ h4.connect {
   font-size: 35px;
 }
 
+.send {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 116%;
+}
+
 .back-to-top {
   margin-top: -24px;
   margin-right: 80px;
@@ -434,3 +442,61 @@ h4.connect {
   border-color: #43C4FF;
 }
 
+#portfolio {
+  background: #005BDE;
+}
+
+.project {
+  margin-top: 40px;
+}
+
+.project-title {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  gap: 145px;
+  isolation: isolate;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.project-text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 136.5%;
+  display: flex;
+  align-items: center;
+  color: #292E35;
+}
+
+.type-project {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 250px;
+  position: relative;
+  display: block;
+}
+
+.contact-us {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.contact-button {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 116%;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 11px 69px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #43C4FF 0%, #1772F5 65.42%, #65C8FF 100%);
+}

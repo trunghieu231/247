@@ -1,26 +1,18 @@
 
 $(document).ready(function() {
  
-    $(".owl-carousel").owlCarousel({
-   
-        autoPlay: 3000,
-        items : 4,
-        itemsDesktop : [1199,3],
-        itemsDesktopSmall : [979,3],
-        center: true,
-        nav:true,
-        loop:true,
-        responsive: {
-          600: {
-            items: 4
-          }
+  $('.owl-menu-item').owlCarousel({
+		items:5,
+		loop:true,
+		dots: true,
+		nav: true,
+		autoplay: 3000,
+		margin:30,
+		  responsive:{
+        300: {
+          items: 5
         }
-       
-       
-        
-        
-        
-   
-    });
+		  }
+	  })
    
   });

@@ -156,10 +156,6 @@ h2.our-services {
   color: #FFFFFF;
 }
 
-#services {
-  background-color: #292E35;
-}
-
 .service-header {
   display: flex;
   flex-direction: row;
@@ -171,6 +167,8 @@ h2.our-services {
 .service-info {
   display: grid;
   gap: 16px;
+  margin-top: 140px;
+  margin-bottom: 50px;
 }
 
 .service-title {
@@ -194,6 +192,11 @@ p.title {
   align-items: center;
 }
 
+#services {
+  background-size: cover;
+  background-color: #292E35;
+}
+
 .services-title-p {
   font-family: 'Raleway';
   font-size: 20px;
@@ -210,14 +213,16 @@ p.title {
 }
 
 .service-box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
+  overflow: hidden;
+  padding: 0;
   gap: 32px;
+  display: flex;
+  margin-bottom: 100px;
+  flex-direction: column;
+  height: 100%;
 }
 
-.service-text {
+h2.service-text {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -226,6 +231,34 @@ p.title {
   display: flex;
   align-items: center;
   color: #292E35;
+}
+
+p.service-text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 136.5%;
+  display: flex;
+  align-items: center;
+  color: #292E35;
+}
+
+.service-element {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-height: 1317px;
+}
+
+.service-element .img-service img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
 }
 
 .service-element-title {
@@ -246,7 +279,6 @@ h3 {
   line-height: 100%;
   position: absolute;
   margin: 55px 23%;
-  color: #43C4FF;
 }
 
 .section-heading {
@@ -452,11 +484,7 @@ h4.connect {
 
 .project-title {
   background: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 20px;
-  gap: 145px;
   isolation: isolate;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -468,9 +496,13 @@ h4.connect {
   font-weight: 700;
   font-size: 20px;
   line-height: 136.5%;
-  display: flex;
-  align-items: center;
+  margin-top: 20px;
   color: #292E35;
+}
+
+a.see-more {
+  float: right;
+  margin-top: 20px;
 }
 
 .type-project {

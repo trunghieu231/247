@@ -72,7 +72,25 @@ p.about-header{
 .more-info .about-box{
     gap:unset;
 }
+#video-247{
+    margin-left: 0%;
+    left: 0%;
+    padding-bottom: 30px;
+}
 /*End about us box*/
+/*Begin dear customer*/
+#dear-Customer{
+    margin-top: 64px;
+}
+.about-h2 {
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+.about-p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*End dear customer*/
 /*Begin history and grew up*/
 #history-grew-up{
     margin-top: 64px;
@@ -113,3 +131,9 @@ p.history-grewUp{
     border-left: none;
 }
 /*End benefits about*/
+/*Begin Footer*/
+.btn-footer-about{
+    margin-top: 24px;
+    margin-right: -291px;
+}
+/*End Footer*/

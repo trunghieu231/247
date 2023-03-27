@@ -23,8 +23,8 @@ iframe{
 .contact-box{
     align-items: flex-start;
     background: #FFFFFF;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+    border-radius: 30px;
+    padding-bottom: 66px;
 }
 .info-247{
     margin-top: 64px;
@@ -74,4 +74,14 @@ iframe{
 }
 .btn-footer-contact{
     margin-top: -22px;
+}
+.send-box-fill{
+    margin-top: 32px;
+    padding-bottom: 32px;
+}
+.btn-send-info{
+    float: right;
+}
+.form-control{
+    height: 62.22222px;
 }

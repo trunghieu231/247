@@ -20,6 +20,14 @@ h2 {
   color: #FFFFFF;
 }
 
+h3 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 150px;
+}
+
 h4 {
   font-family: 'SF Pro Display';
   font-style: normal;
@@ -50,6 +58,11 @@ h4 {
   font-size: 16px;
   font-weight: 700;
   color: #292E35;
+}
+
+.nav ul li:hover a,
+.nav ul li a.active {
+  color: #005BDE;
 }
 
 .navbar-light .navbar-toggler {
@@ -233,6 +246,12 @@ h2.service-text {
   color: #292E35;
 }
 
+h3.service-text {
+  position: absolute;
+  margin: 55px 21%;
+  opacity: 0.3;
+}
+
 p.service-text {
   font-family: 'Lato';
   font-style: normal;
@@ -269,16 +288,6 @@ p.service-text {
   padding: 32px;
   gap: 16px;
   isolation: isolate;
-}
-
-h3 {
-  opacity: 30%;
-  font-family: 'Raleway';
-  font-size: 128px;
-  font-weight: bold;
-  line-height: 100%;
-  position: absolute;
-  margin: 55px 23%;
 }
 
 .section-heading {

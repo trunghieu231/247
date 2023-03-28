@@ -6,13 +6,24 @@
   font-weight: normal;
   font-style: normal;
 }
-#container-body-About{
-    background-color:#005BDE ;
-}
 .breadcrumb-menu{
     text-decoration: none;
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
+
+.test {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
 h1.about-header{
     color: white;
     font-family: 'Raleway';
@@ -54,6 +65,9 @@ li.breadcrumb-item{
 }
 #about{
     padding-bottom: 2.218%;
+    background-image: url(assets/img/8.svg);
+    background-size: cover;
+    background-color: #005BDE;
 }
 p.about-header{
     color: white;

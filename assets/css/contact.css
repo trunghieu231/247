@@ -85,3 +85,24 @@ iframe{
 .form-control{
     height: 62.22222px;
 }
+.title-box{
+    position:absolute;
+    padding-left: 13px;
+    padding-top: 8px;
+}
+.form-group{
+    margin-bottom: 32px;
+    height: 60px;
+    width: 537px;
+}
+.form-control{
+    height: 60px;
+    width: 537px;
+}
+.form-group input::placeholder{
+    color: red;
+}
+.btn-send-info{
+    width: 266px;
+    height: 60px;
+}

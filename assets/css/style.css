@@ -541,3 +541,12 @@ a.see-more {
   border-radius: 30px;
   background: linear-gradient(180deg, #43C4FF 0%, #1772F5 65.42%, #65C8FF 100%);
 }
+em{
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+align-items: center;
+color: red;
+}

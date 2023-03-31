@@ -23,8 +23,9 @@ iframe{
 .contact-box{
     align-items: flex-start;
     background: #FFFFFF;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+    border-radius: 30px;
+    padding-bottom: 104px;
+    margin-bottom: 117px;
 }
 .info-247{
     margin-top: 64px;
@@ -59,14 +60,26 @@ iframe{
     flex: none;
     padding-bottom: 32px;
     color: #d9d9d9; ;
-    width: 1106px;
     height: 1px;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
     opacity: 1;
     margin-top: 18.5px;
     margin-bottom: 0px;
+}
+.header-send-box{
+    padding-bottom: 2.7%;
+
+}
+.header-send-box h1{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    align-items: center;
+    color: #292E35;
 }
 .send-box{
     padding-left: 32px;
@@ -74,4 +87,51 @@ iframe{
 }
 .btn-footer-contact{
     margin-top: -22px;
+}
+.form-control{
+    border: none;
+    
+}
+.btn-send-form{
+    float: right;
+    width: 23%;
+    height: 70.22222px;
+}
+.label-form{
+    padding-left: 2%;
+    color: #5C5F69;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 116%;
+    padding-top: 13px;
+}
+.form-control-message{
+    height: 250px;
+}
+.send-box-fill input::placeholder{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5C5F69;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.form-send-fill{
+    border: 1px solid #676A75;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+.fill-mobile-code{
+    margin: 0;
+}
+.fill-phone-code{
+    padding-left: 0;
+}
+.fill-mobile-number{
+    padding-right: 0;
 }

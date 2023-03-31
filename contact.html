@@ -70,7 +70,7 @@
   </nav>
   <!-- Navbar End -->
 
-  <section id="about" class="about" style="background-image: url(assets/img/8.svg); background-size: cover;">
+  <section id="about" class="about">
     <div class="container aos-init aos-animate" style="padding-top: 46px;" data-aos="fade-up">
       <div class="row">
         <div class="breadcrumb-menu">
@@ -126,7 +126,62 @@
                   <h1>Please send your information for us</h1>
                 </div>
                 <div class=" send-box-fill">
-
+                  <form>
+                    <div class="form-row row">
+                      <div class="col-md-6">
+                        <div class="form-group col-md-12">
+                          <div class="form-send-fill">
+                            <label class="label-form">Full name <em>*</em></label>
+                            <input type="email" class="form-control" id="floatingInputValue" placeholder="Fill your full name" required>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                          <div class="form-send-fill">
+                            <label class="label-form">Email Address <em>*</em></label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Your Email Address" required>
+                         </div>
+                        </div>
+                        <div class="form-row row col-md-12 fill-mobile-code">
+                          <div class="form-group col-md-6 fill-phone-code">
+                            <div class="form-send-fill">
+                              <label class="label-form">Phone code <em>*</em></label>
+                              <select id="inputPhoneCode" class="form-control" required>
+                              <option selected>Vietnam(84)</option>
+                              <option>...</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group col-md-6 fill-mobile-number" >
+                            <div class="form-send-fill">
+                              <label class="label-form">Mobile Number <em>*</em></label>
+                              <input type="tel" class="form-control" required>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="form-group col-md-12">
+                        <div class="form-send-fill">
+                          <label class="label-form">Country <em>*</em></label>
+                          <input type="text" class="form-control" placeholder="Your country" required>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group col-md-12">
+                          <div class="form-send-fill">
+                            <label class="label-form">Company <em>*</em></label>
+                            <input type="text" class="form-control" id="inputCompany" placeholder="Your Company" required>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <div class="form-send-fill">
+                          <label class="label-form">Message</label>
+                          <input type="text" class="form-control form-control-message" id="inputMessage">
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <button type="button" class="send btn btn-primary py-2 top-0 end-0 me-2 btn-send-form">Send</button>
+                  </form>
                 </div>
               </div>
             </div>

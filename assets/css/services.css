@@ -54,8 +54,6 @@ h2 {
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
-  display: flex;
-  align-items: center;
   color: #FFFFFF;
 }
 
@@ -151,8 +149,7 @@ p.service-header {
 }
 
 .service-content {
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
+  border-radius: 35px;
   background: #FFFFFF;
 }
 
@@ -162,9 +159,26 @@ h2.title {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  display: flex;
-  align-items: center;
   color: #292E35
+}
+
+h2.title em {
+  color: #005BDE;
+  font-style: normal;
+}
+
+p.title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 136.5%;
+  color: #005BDE;
+}
+
+p.title em {
+  font-style: normal;
+  font-weight: 700;
 }
 
 h2.table-content {
@@ -174,8 +188,6 @@ h2.table-content {
   font-size: 20px;
   line-height: 136.5%;
   color: #292E35;
-  display: flex;
-  align-items: center;
 }
 
 .service-title {
@@ -234,8 +246,6 @@ h2.airline-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  display: flex;
-  align-items: center;
   text-align: center;
 }
 
@@ -331,8 +341,6 @@ h2.label-text {
   font-weight: 700;
   font-size: 20px;
   line-height: 136.5%;
-  display: flex;
-  align-items: center;
   text-align: center;
   color: #005BDE;
 }
@@ -366,7 +374,17 @@ h4.label-element {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 16px;
+  gap: 32px;
+}
+
+@media (max-width: 991px) {
+  .solution {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
 }
 
 .solution-title {
@@ -385,7 +403,7 @@ h4.label-element {
   gap: 8px;
   background: #FFFFFF;
   border-radius: 16px;
-  height: 228px;
+  height: 240px;
   margin-bottom: 50px;
 }
 
@@ -410,15 +428,16 @@ h4.label-element {
 }
 
 .provides {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 16px;
-  margin-top: 50px;
-} 
+  background: #292E35;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
 
-.provide {
+.provide { 
+  padding: 63px 32px;
+}
+
+.provide-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -432,7 +451,6 @@ h4.label-element {
   align-items: center;
   padding: 0px;
   gap: 8px;
-  padding-left: 37px;
 }
 
 p.provide-title {
@@ -484,7 +502,7 @@ p.provide-title {
   padding: 32px;
   gap: 19px;
   isolation: isolate;
-  height: 350px;
+  height: 410px;
 }
 
 .img-service {
@@ -511,6 +529,36 @@ p.element-title {
   line-height: 136.5%;
   display: flex;
   align-items: center;
+}
+
+a.full-service-detail{
+  text-decoration: none;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 136.5%;
+}
+
+.wow-pay {
+  padding: 64px 32px;
+}
+
+.wowpay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.wowpay-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  padding-left: 37px;
 }
 
 p.footer {
@@ -588,4 +636,37 @@ h4.connect {
 .btn:hover {
   background-color: #43C4FF;
   border-color: #43C4FF;
+}
+
+.project-title {
+  background: #FFFFFF;
+  padding: 20px;
+  isolation: isolate;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.project-text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 136.5%;
+  margin-top: 20px;
+  color: #292E35;
+}
+
+a.see-more {
+  float: right;
+  margin-top: 28px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 116%;
+  text-decoration: none;
+}
+
+.owl-menu-project {
+  margin-bottom: 80px;
 }

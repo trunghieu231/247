@@ -511,7 +511,13 @@ h4.connect {
 
 a.see-more {
   float: right;
-  margin-top: 20px;
+  margin-top: 28px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 116%;
+  text-decoration: none;
 }
 
 .type-project {
@@ -540,4 +546,8 @@ a.see-more {
   padding: 11px 69px;
   border-radius: 30px;
   background: linear-gradient(180deg, #43C4FF 0%, #1772F5 65.42%, #65C8FF 100%);
+}
+
+.owl-menu-item {
+  margin-bottom: 80px;
 }

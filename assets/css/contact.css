@@ -25,6 +25,7 @@ iframe{
     background: #FFFFFF;
     border-radius: 30px;
     padding-bottom: 104px;
+    margin-bottom: 117px;
 }
 .info-247{
     margin-top: 64px;
@@ -69,6 +70,16 @@ iframe{
 }
 .header-send-box{
     padding-bottom: 2.7%;
+
+}
+.header-send-box h1{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    align-items: center;
+    color: #292E35;
 }
 .send-box{
     padding-left: 32px;
@@ -88,7 +99,7 @@ iframe{
 }
 .label-form{
     padding-left: 2%;
-    color: #676A75;
+    color: #5C5F69;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;

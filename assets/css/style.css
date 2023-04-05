@@ -41,6 +41,10 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #FFFFFF;
 }
 
 #nav {
@@ -109,6 +113,7 @@ h4 {
 .video {
   position: relative;
   background: #000000 50%;
+  margin-bottom: -6px;
 }
 
 .logo-banner {
@@ -233,6 +238,7 @@ p.title {
   margin-bottom: 100px;
   flex-direction: column;
   height: 100%;
+  width: 100%;
 }
 
 h2.service-text {
@@ -261,6 +267,15 @@ p.service-text {
   display: flex;
   align-items: center;
   color: #292E35;
+}
+
+a.full-service-detail{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 136.5%;
+  text-decoration: none;
 }
 
 .service-element {
@@ -309,18 +324,14 @@ p.service-text {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 42px;
+  gap: 22px;
   background: #FFFFFF;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
 }
 
 .about-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 48px 10px;
-  gap: 16px;
+  padding: 40px 37px;
   isolation: isolate;
 }
 
@@ -344,6 +355,19 @@ p.about-p {
   display: flex;
   align-items: center;
   color: #292E35;
+  margin-bottom: 31px;
+}
+
+a.read-more {
+  float: right;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 136.5%;
+  margin-top: 30px;
+  margin-right: 35px;
+  text-decoration: none;
 }
 
 .benefits {
@@ -550,4 +574,32 @@ a.see-more {
 
 .owl-menu-item {
   margin-bottom: 80px;
+}
+
+i.bi.bi-chevron-right {
+  color: #43C4FF;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #666666;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
 }

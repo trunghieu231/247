@@ -64,6 +64,8 @@ li.breadcrumb-item{
     border-radius: 30px;
     padding-left: 0;
     padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 #about{
     padding-bottom: 2.218%;
@@ -110,8 +112,17 @@ p.about-header{
 .logo-247-about{
     margin-left: 0;
 }
+#video-247{
+    width: 100%;
+}
+@media (max-width: 1024px) {
+    .logo-247-about{
+        border-top-right-radius: 30px;
+    }
+}
 .video-247-field{
     padding-left: 0;
+    padding-right: 0;
 }
 /*End dear customer*/
 /*Begin history and grew up*/

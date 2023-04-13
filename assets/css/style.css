@@ -7,7 +7,9 @@
   font-style: normal;
 }
 
-
+a {
+  text-decoration: none;
+}
 
 h2 {
   font-family: 'Raleway';
@@ -47,11 +49,11 @@ h4 {
   background-color: #FFFFFF;
 }
 
-#nav {
+#navbarCollapse {
   justify-content: end;
 }
 
-#nav>ul>li>a {
+#navbarCollapse>ul>li>a {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -64,9 +66,12 @@ h4 {
   color: #292E35;
 }
 
-.nav ul li:hover a,
-.nav ul li a.active {
+#navbarCollapse>ul>li>a:hover {
   color: #005BDE;
+}
+
+.dropdown-toggle::after {
+  display:none;
 }
 
 .navbar-light .navbar-toggler {
@@ -581,13 +586,13 @@ i.bi.bi-chevron-right {
 }
 
 .dropdown-menu.show {
-  display: block;
+  display: flex;
 }
 
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -750px;
   z-index: 1000;
   display: none;
   float: left;
@@ -600,6 +605,21 @@ i.bi.bi-chevron-right {
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+  border: 0px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 20px 20px;
+  width: 1170px;
+}
+
+h2.dropdown {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 136.5%;
+  color: #292E35;
+}
+
+.half-col {
+  padding: 30px;
+  padding-bottom: 0px;
 }

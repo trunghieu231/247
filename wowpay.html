@@ -35,22 +35,57 @@
       <a class="header-link" href="index.html">
         <img src="assets/img/Logo.png">
       </a>
-      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#nav">
+      <button type="button" class="navbar-toggler me-4" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="nav">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a class="nav-link">About 247</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About 247</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">Our Services</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown04">
-              <a class="dropdown-item" href="shop.html">Shop</a>
-              <a class="dropdown-item" href="wishlist.html">Wishlist</a>
-              <a class="dropdown-item" href="product-single.html">Single Product</a>
-              <a class="dropdown-item" href="cart.html">Cart</a>
-              <a class="dropdown-item" href="checkout.html">Checkout</a>
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Our Services<i
+                class="bi bi-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <div class="half-col">
+                <div class="w-100 d-flex align-items-start">
+                  <img src="assets/img/services/B2B.png">
+                  <div class="mb-4 ps-3">
+                    <h2 class="dropdown">B2B Dynamic Packging</h2>
+                    <p class="dropdown">Our platform aggregates a large range of travel services including hotel
+                      bookings, car rentals, activities and tours, insurance, airport transfers and many more. <a
+                        href="B2B.html">view details</a></p>
+                  </div>
+                </div>
+                <div class="w-100 d-flex align-items-start">
+                  <img src="assets/img/services/Agency.png">
+                  <div class="mb-4 ps-3">
+                    <h2 class="dropdown">The Agency Portal</h2>
+                    <p class="dropdown pe-3">Sales solutions for your agents, increase revenue and achieve business
+                      goals. Simple, easy to use, fully managed by agents
+                      <a href="agency.html">view details</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="half-col">
+                <div class="w-100 d-flex align-items-start">
+                  <img src="assets/img/services/HMS.png">
+                  <div class="mb-4 ps-3">
+                    <h2 class="dropdown">HMS</h2>
+                    <p class="dropdown">You have your own data, but don’t know how to digital conversion to sell ? Don't
+                      worry, we have HMS (Hotel Management System) to support <a href="HMS.html">view details</a></p>
+                  </div>
+                </div>
+                <div class="w-100 d-flex align-items-start">
+                  <img src="assets/img/services/wowpay.png">
+                  <div class="mb-4 ps-3">
+                    <h2 class="dropdown">Wowpay</h2>
+                    <p class="dropdown">IDEALLY, airlines would fully control payments offering:
+                      Complete control of payment stack, using multiple
+                      PSPs without IT dependancy...<a href="wowpay.html">view details</a></p>
+                  </div>
+                </div>
+              </div>
             </div>
           </li>
           <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
@@ -85,8 +120,8 @@
             <a href="agency.html">
               <img src="assets/img/services/Agency.png">
             </a>
-            <a href="wowpay.html">
-              <img src="assets/img/services/wowpay.png">
+            <a href="HMS.html">
+              <img src="assets/img/services/HMS.png">
             </a>
           </div>
         </div>
@@ -107,9 +142,9 @@
           <img src="assets/img/services/wowpay system.png"
             style="width: 100%; border-top-right-radius: 30px; border-top-left-radius: 30px;">
         </div>
-        <div class="container" style="padding: 30px">
+        <div class="container p-4">
           <div class="row">
-            <div class="col-lg-10" style="margin-top: 50px;">
+            <div class="col-lg-10 mt-5">
               <h2 class="title" style="color: #676A75"><em>IDEALLY</em>, airlines would <em>fully control payments</em>
                 offering:
                 Complete control of payment stack, using multiple
@@ -164,31 +199,31 @@
                 </ul>
               </div>
             </div>
-            <div class="container py-5">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-12 text-center">
-                  <h2 class="title">Orchestrate & Expand</h2>
-                  <h2 class="title"> your payment stack with clicks, <em>not code</em></h2>
-                </div>
-            </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <h2 class="title" style="margin-bottom: 30px">Wowpay Options</h2>
-                <div class="service-title">
-                  <div class="service-detail col-md-6">
-                    <ul class="service-text">
-                      <li>Payment Orchestration & Automation Platform</li>
-                      <li>Integrates PSPs & acquirers across the globe</li>
-                    </ul>
-                  </div>
-                  <div class="service-detail col-md-6">
-                    <ul class="service-text">
-                      <li>Provides way to control payment stack using clicks - not code</li>
-                      <li>Powerful rules for dynamic routing and optimise success rates</li>
-                    </ul>
-                  </div>
-                </div>
+          </div>
+        </div>
+        <div class="container py-5" style="background-color: #F8EFFF;">
+          <div class="row text-center mb-5 pb-3">
+            <h2 class="title">Orchestrate &amp; Expand <br>your payment stack with clicks, <em>not code</em></h2>
+            <img src="assets/img/services/payment.png">
+            <h2 class="title"><em>Wowpay</em> routes transaction to <em>lowest fee acquirer</em> 
+              <br>with <em>single integration</em></h2>
+          </div>
+        </div>
+        <div class="container p-4">
+          <div class="row">
+            <h2 class="title" style="margin-bottom: 30px">Wowpay Options</h2>
+            <div class="service-title">
+              <div class="service-detail col-md-6">
+                <ul class="service-text">
+                  <li>Payment Orchestration & Automation Platform</li>
+                  <li>Integrates PSPs & acquirers across the globe</li>
+                </ul>
+              </div>
+              <div class="service-detail col-md-6">
+                <ul class="service-text">
+                  <li>Provides way to control payment stack using clicks - not code</li>
+                  <li>Powerful rules for dynamic routing and optimise success rates</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -266,7 +301,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-12 mt-5">
         <div class="contact-us">
           <a href="contact.html" class="contact-button btn-primary">Contact with Us</a>
         </div>
@@ -377,4 +412,8 @@
     </div>
   </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 </body>

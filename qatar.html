@@ -36,25 +36,60 @@
       <a class="header-link" href="index.html">
         <img src="assets/img/Logo.png">
       </a>
-      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#nav">
+      <button type="button" class="navbar-toggler me-4" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="nav">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a class="nav-link">About 247</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About 247</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">Our Services</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown04">
-              <a class="dropdown-item" href="shop.html">Shop</a>
-              <a class="dropdown-item" href="wishlist.html">Wishlist</a>
-              <a class="dropdown-item" href="product-single.html">Single Product</a>
-              <a class="dropdown-item" href="cart.html">Cart</a>
-              <a class="dropdown-item" href="checkout.html">Checkout</a>
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Our Services<i
+                class="bi bi-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <div class="half-col">
+                <div class="w-100 d-flex align-items-start">
+                  <img src="assets/img/services/B2B.png">
+                  <div class="mb-4 ps-3">
+                    <h2 class="dropdown">B2B Dynamic Packging</h2>
+                    <p class="dropdown">Our platform aggregates a large range of travel services including hotel
+                      bookings, car rentals, activities and tours, insurance, airport transfers and many more. <a
+                        href="B2B.html">view details</a></p>
+                  </div>
+                </div>
+                <div class="w-100 d-flex align-items-start">
+                  <img src="assets/img/services/Agency.png">
+                  <div class="mb-4 ps-3">
+                    <h2 class="dropdown">The Agency Portal</h2>
+                    <p class="dropdown pe-3">Sales solutions for your agents, increase revenue and achieve business
+                      goals. Simple, easy to use, fully managed by agents
+                      <a href="agency.html">view details</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="half-col">
+                <div class="w-100 d-flex align-items-start">
+                  <img src="assets/img/services/HMS.png">
+                  <div class="mb-4 ps-3">
+                    <h2 class="dropdown">HMS</h2>
+                    <p class="dropdown">You have your own data, but don’t know how to digital conversion to sell ? Don't
+                      worry, we have HMS (Hotel Management System) to support <a href="HMS.html">view details</a></p>
+                  </div>
+                </div>
+                <div class="w-100 d-flex align-items-start">
+                  <img src="assets/img/services/wowpay.png">
+                  <div class="mb-4 ps-3">
+                    <h2 class="dropdown">Wowpay</h2>
+                    <p class="dropdown">IDEALLY, airlines would fully control payments offering:
+                      Complete control of payment stack, using multiple
+                      PSPs without IT dependancy...<a href="wowpay.html">view details</a></p>
+                  </div>
+                </div>
+              </div>
             </div>
           </li>
-          <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link" style="color:#005BDE">Portfolio</a></li>
           <li class="nav-item"><a href="ourNetwork.html" class="nav-link">Our Network</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
@@ -69,14 +104,14 @@
   <!-- Navbar End -->
 
   <section id="services">
-    <div class="container" style="padding-top: 46px;">
+    <div class="container pt-5">
       <div class="row">
         <div class="breadcrumb-menu">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a class="breadcrumb-item" href="index.html">Home</a></li>
               <img src="assets/img/Union.png">
-              <li class="breadcrumb-item" aria-current="page">Portfolio</li>
+              <li class="breadcrumb-item" aria-current="page"><a class="text-light" href="portfolio.html">Portfolio</a></li>
             </ol>
           </nav>
         </div>
@@ -96,7 +131,7 @@
           <img src="assets/img/Qatar/page.png"
             style="width: 100%; border-top-right-radius: 30px; border-top-left-radius: 30px;">
         </div>
-        <div class="container" style="padding: 30px">
+        <div class="container p-4">
           <div class="row">
             <div class="service-title">
               <div class="col-md-5">
@@ -200,76 +235,85 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-12">
-          <div class="contact-us">
-            <a href="contact.html" class="contact-button btn-primary">Contact with Us</a>
+        <div class="col-lg-12 mt-5 mb-5">
+          <div class="back">
+            <i class="bi bi-chevron-left" style="color: #D9D9D9"></i>
+            <a class="back" href="portfolio.html">Back</a>
           </div>
         </div>
       </div>
     </div>
-    
+
     <section id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="heading">
-            <h2>Orther Projects</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="heading">
+              <h2>Other Projects</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="owl-menu-project owl-carousel">
+              <div class="col-lg-12">
+                <div class="item">
+                  <img src="assets/img/portfolio/Qatar.png"
+                    style="width: 100%; border-top-right-radius: 30px; border-top-left-radius: 30px;">
+                  <div class="project-title">
+                    <a class="see-more" href="#">See more<i class="bi bi-chevron-right"></i></a>
+                    <p class="project-text">Qatar Holidays</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="item">
+                  <img src="assets/img/portfolio/GulfAir.png"
+                    style="width: 100%; border-top-right-radius: 30px; border-top-left-radius: 30px;">
+                  <div class="project-title">
+                    <a class="see-more" href="#">See more<i class="bi bi-chevron-right"></i></a>
+                    <p class="project-text">Gulfair Holidays</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="item">
+                  <img src="assets/img/portfolio/Etihad.png"
+                    style="width: 100%; border-top-right-radius: 30px; border-top-left-radius: 30px;">
+                  <div class="project-title">
+                    <a class="see-more" href="#">See more<i class="bi bi-chevron-right"></i></a>
+                    <p class="project-text">Etihad Holidays</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="item">
+                  <img src="assets/img/portfolio/MHH.png"
+                    style="width: 100%; border-top-right-radius: 30px; border-top-left-radius: 30px;">
+                  <div class="project-title">
+                    <a class="see-more" href="#">See more<i class="bi bi-chevron-right"></i></a>
+                    <p class="project-text">Malaysia Holidays</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="item">
+                  <img src="assets/img/portfolio/AirAsia.png"
+                    style="width: 100%; border-top-right-radius: 30px; border-top-left-radius: 30px;">
+                  <div class="project-title">
+                    <a class="see-more" href="#">See more<i class="bi bi-chevron-right"></i></a>
+                    <p class="project-text">Airasia Super App
+                    <p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="owl-menu-project owl-carousel">
-            <div class="col-lg-12">
-              <div class="item">
-                <img src="assets/img/portfolio/Qatar.png" style="width: 100%; border-top-right-radius: 30px; border-top-left-radius: 30px;">
-                <div class="project-title">
-                  <a class="see-more" href="#">See more<i class="bi bi-chevron-right"></i></a>
-                  <p class="project-text">Qatar Holidays</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="item">
-                <img src="assets/img/portfolio/GulfAir.png" style="width: 100%; border-top-right-radius: 30px; border-top-left-radius: 30px;">
-                <div class="project-title">
-                  <a class="see-more" href="#">See more<i class="bi bi-chevron-right"></i></a>
-                  <p class="project-text">Gulfair Holidays</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="item">
-                <img src="assets/img/portfolio/Etihad.png" style="width: 100%; border-top-right-radius: 30px; border-top-left-radius: 30px;">
-                <div class="project-title">
-                  <a class="see-more" href="#">See more<i class="bi bi-chevron-right"></i></a>
-                  <p class="project-text">Etihad Holidays</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="item">
-                <img src="assets/img/portfolio/MHH.png" style="width: 100%; border-top-right-radius: 30px; border-top-left-radius: 30px;">
-                <div class="project-title">
-                  <a class="see-more" href="#">See more<i class="bi bi-chevron-right"></i></a>
-                  <p class="project-text">Malaysia Holidays</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="item">
-                <img src="assets/img/portfolio/AirAsia.png" style="width: 100%; border-top-right-radius: 30px; border-top-left-radius: 30px;">
-                <div class="project-title">
-                  <a class="see-more" href="#">See more<i class="bi bi-chevron-right"></i></a>
-                  <p class="project-text">Airasia Super App<p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-    </div>
-  </section>
+    </section>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top btn-footer-network"><i class="fa fa-angle-up"
+        style="font-size: 30px;"></i></a>
 
     <!--Footer-->
     <div class="container-fluid footer" style="background-image: url(assets/img/footer.png); background-size: cover;">
@@ -302,7 +346,7 @@
             <p class="product"><i class="bi bi-chevron-right product"></i>Portfolio</p>
             <p class="product"><i class="bi bi-chevron-right product"></i>Our Network</p>
           </div>
-          <div class="col-lg-4 col-md-6" style="padding: 0px;">
+          <div class="col-lg-4 col-md-6 p-0">
             <h4 class="connect">Connect with us</h4>
             <div class="email">
               <input class="form-control border-0 w-100 py-3 pe-5" type="text" placeholder="Email address">
@@ -322,7 +366,8 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></Script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 </body>

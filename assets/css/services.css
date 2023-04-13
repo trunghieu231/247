@@ -7,17 +7,22 @@
   font-style: normal;
 }
 
-#navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+a {
+  text-decoration: none;
 }
 
-#nav {
+#navbar {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: #fff;
+}
+
+#navbarCollapse {
   justify-content: end;
 }
 
-#nav>ul>li>a {
+#navbarCollapse>ul>li>a {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -30,9 +35,12 @@
   color: #292E35;
 }
 
-.nav ul li:hover a,
-.nav ul li a.active {
+#navbarCollapse>ul>li>a:hover {
   color: #005BDE;
+}
+
+.dropdown-toggle::after {
+  display:none;
 }
 
 .navbar-light .navbar-toggler {
@@ -219,6 +227,15 @@ ul.service-text {
   margin-left: -12px;
 }
 
+a.back {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 136.5%;
+  color: #FFFFFF;
+}
+
 .line-under-home {
   color: #E6EAF8;
   opacity: 0.3;
@@ -280,7 +297,9 @@ p.airline-text {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  position: relative;
+  z-index: 2;
+  margin-right: 16px;
 }
 
 h2.label-content {
@@ -322,9 +341,12 @@ p.label-content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 8px;
-  gap: 8px;
+  padding: 9px 6px;
   border-radius: 14px;
+}
+
+h4.plug {
+  line-height: 0px;
 }
 
 p.plug {
@@ -337,14 +359,15 @@ p.plug {
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+  padding: 0;
 }
 
 .label-title {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
-  gap: 10px;
+  gap: 350px;
+  padding: 10px 0 0 50px;
 }
 
 .label-text {
@@ -485,7 +508,7 @@ p.provide-title {
 
 .contact-us {
   text-align: center;
-  padding: 100px;
+  padding: 40px;
 }
 
 .contact-button {
@@ -694,4 +717,65 @@ a.see-more {
 
 i.bi.bi-chevron-right {
   color: #43C4FF;
+}
+
+.dropdown-menu.show {
+  display: flex;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: -750px;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #666666;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 20px 20px;
+  width: 1170px;
+}
+
+h2.dropdown {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 136.5%;
+  color: #292E35;
+}
+
+.half-col {
+  padding: 30px;
+  padding-bottom: 0px;
+}
+
+.portal:before {
+  content: "";
+  width: 50%;
+  height: 1px;
+  position: absolute;
+  left: calc(24% + 29px);
+  background-color: #ffffff;
+  z-index: 1;
+  font-size: 20px;
+  bottom: 50%;
+  border: 1px dashed #005BDE;
+}
+
+h4.label-text {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
 }

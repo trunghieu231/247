@@ -146,6 +146,13 @@ p.history-grewUp{
     font-size: 20px;
     line-height: 136.5%;
 }
+.back-to-top {
+    margin-top: -24px;
+    margin-right: 80px;
+    float: right;
+    border-radius: 51px;
+    background: #43C4FF;
+  }
 /*End history and grew up*/
 /*Begin benefits about*/
 #row-benefits-about{

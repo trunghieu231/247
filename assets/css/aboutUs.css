@@ -16,6 +16,14 @@
     gap: 10px;
 }
 
+ol.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+}
+
 .test {
     display: flex;
     flex-direction: row;
@@ -61,9 +69,7 @@ li.breadcrumb-item{
 
 /*Begin about us box*/
 .about-box{
-    border-radius: 30px;
     padding-left: 0;
-    padding-right: 0;
 }
 #about{
     padding-bottom: 2.218%;
@@ -116,10 +122,11 @@ p.about-header{
 /*End dear customer*/
 /*Begin history and grew up*/
 #history-grew-up{
-    margin-top: 64px;
     margin-bottom: 64px;
     padding-left: 32px;
     padding-right: 32px;
+    border-radius: 0px 0px 30px 30px;
+    background: #FFFFFF;
 }
 h1.history-grewUp{
     color: #005BDE;
@@ -156,12 +163,15 @@ p.history-grewUp{
 /*End history and grew up*/
 /*Begin benefits about*/
 #row-benefits-about{
-    margin-top: 64px;
     border-radius: 30px;
     border-bottom: 64px;
 }
 .benefit-item-increase{
     border-left: none;
+}
+.benefits {
+    margin-top: 80px;
+    border-radius: 30px;
 }
 /*End benefits about*/
 /*Begin Footer*/
@@ -170,3 +180,45 @@ p.history-grewUp{
     margin-right: -291px;
 }
 /*End Footer*/
+
+@media (min-width: 350px) and (max-width: 576px)  {
+    .about-p {
+        padding: 0;
+    }
+
+    .back-to-top {
+        margin-right: 30px;
+    }
+
+    h1.about-header {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    p.about-header {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .about-h2 {
+        padding-left: 0;
+    }
+    p.about-p {
+        font-size: 16px;
+        line-height: 136.5%;
+    }
+    h1.history-grewUp {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    h2.history-grewUp {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    p.history-grewUp {
+        font-size: 16px;
+    }
+    p.benefit-text {
+        font-size: 16px;
+        line-height: 136.5%;
+    }
+}

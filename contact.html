@@ -38,8 +38,10 @@
       <a class="header-link" href="index.html">
         <img src="assets/img/Logo.png">
       </a>
-      <button type="button" class="navbar-toggler me-4" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
+      <button type="button" class="navbar-mobile" data-toggle="collapse" data-target="#navbarCollapse">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -106,12 +108,13 @@
   <!-- Navbar End -->
 
   <section id="about" class="about">
-    <div class="container aos-init aos-animate" style="padding-top: 46px;" data-aos="fade-up">
+    <div class="container aos-init aos-animate pt-5" data-aos="fade-up">
       <div class="row">
         <div class="breadcrumb-menu">
           <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a class="breadcrumb-item" href="index.html">Home</a></li>
+              <img src="assets/img/Union.png">
               <li class="breadcrumb-item" aria-current="page">Contact Us</li>
             </ol>
           </nav>
@@ -124,7 +127,6 @@
         </div>
         <section class="more-info" id="more-info">
           <!--Begin the info box-->
-          <div class="container">
             <div class="contact-box ">
               <div id="map-247">
                 <iframe
@@ -167,60 +169,62 @@
                         <div class="form-group col-md-12">
                           <div class="form-send-fill">
                             <label class="label-form">Full name <em>*</em></label>
-                            <input type="email" class="form-control" id="floatingInputValue" placeholder="Fill your full name" required>
+                            <input type="email" class="form-control" id="floatingInputValue"
+                              placeholder="Fill your full name" required>
                           </div>
                         </div>
                         <div class="form-group col-md-12">
                           <div class="form-send-fill">
                             <label class="label-form">Email Address <em>*</em></label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Your Email Address" required>
-                         </div>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Your Email Address"
+                              required>
+                          </div>
                         </div>
-                        <div class="form-row row col-md-12 fill-mobile-code">
-                          <div class="form-group col-md-6 fill-phone-code">
+                        <div class="form-row col-md-12 fill-mobile-code">
+                          <div class="form-group col-md-12 fill-phone-code">
                             <div class="form-send-fill">
                               <label class="label-form">Phone code <em>*</em></label>
                               <select id="inputPhoneCode" class="form-control" required>
-                              <option selected>Vietnam(84)</option>
-                              <option>...</option>
+                                <option selected>Vietnam(84)</option>
+                                <option>...</option>
                               </select>
                             </div>
                           </div>
-                          <div class="form-group col-md-6 fill-mobile-number" >
+                          <div class="form-group col-md-12 fill-mobile-number">
                             <div class="form-send-fill">
                               <label class="label-form">Mobile Number <em>*</em></label>
                               <input type="tel" class="form-control" required>
                             </div>
                           </div>
                         </div>
-                      <div class="form-group col-md-12">
-                        <div class="form-send-fill">
-                          <label class="label-form">Country <em>*</em></label>
-                          <input type="text" class="form-control" placeholder="Your country" required>
+                        <div class="form-group col-md-12">
+                          <div class="form-send-fill">
+                            <label class="label-form">Country <em>*</em></label>
+                            <input type="text" class="form-control" placeholder="Your country" required>
+                          </div>
                         </div>
-                      </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group col-md-12">
                           <div class="form-send-fill">
                             <label class="label-form">Company <em>*</em></label>
-                            <input type="text" class="form-control" id="inputCompany" placeholder="Your Company" required>
+                            <input type="text" class="form-control" id="inputCompany" placeholder="Your Company"
+                              required>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                          <div class="form-send-fill">
+                            <label class="label-form">Message</label>
+                            <input type="text" class="form-control form-control-message" id="inputMessage">
+                          </div>
                         </div>
                       </div>
-                      <div class="form-group col-md-12">
-                        <div class="form-send-fill">
-                          <label class="label-form">Message</label>
-                          <input type="text" class="form-control form-control-message" id="inputMessage">
-                        </div>
-                      </div>
-                    </div>
                     </div>
                     <button type="button" class="send btn btn-primary py-2 top-0 end-0 me-2 btn-send-form">Send</button>
                   </form>
                 </div>
               </div>
             </div>
-          </div>
       </div>
       <!--End the infor box-->
   </section>
@@ -232,9 +236,9 @@
   <!--Footer-->
   <div class="container-fluid footer" style="background-image: url(assets/img/footer.png); background-size: cover;">
     <div class="container py-5">
-      <div class="row g-5">
+      <div class="row">
         <div class="col-lg-4 col-md-6">
-          <img style="margin-bottom: 20px;" src="assets/img/Logo-footer.svg">
+          <img class="mb-4" src="assets/img/Logo-footer.svg">
           <h4>247 Technology Consulting Co., LTD</h4>
           <p class="footer">
             <img src="assets/img/footer/place.png">
@@ -260,7 +264,7 @@
           <p class="product"><i class="bi bi-chevron-right product"></i>Portfolio</p>
           <p class="product"><i class="bi bi-chevron-right product"></i>Our Network</p>
         </div>
-        <div class="col-lg-4 col-md-6" style="padding: 0px;">
+        <div class="col-lg-4 col-md-12 p-0">
           <h4 class="connect">Connect with us</h4>
           <div class="email">
             <input class="form-control border-0 w-100 py-3 pe-5" type="text" placeholder="Email address">

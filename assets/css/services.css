@@ -39,6 +39,47 @@ a {
   color: #005BDE;
 }
 
+.navbar-mobile {
+  position: relative;
+  width: 35px;
+  height: 16px;
+  border: 0;
+  background: transparent
+}
+
+.navbar-mobile {
+  position: relative;
+  width: 35px;
+  height: 16px;
+  border: 0;
+  background: transparent;
+}
+
+.navbar-mobile span {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: none;
+  background: #43C4FF;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+
+.navbar-mobile span:nth-child(2) {
+  width: 80%;
+  top: 10px;
+  left: auto;
+  right: 0;
+}
+
+.navbar-mobile span:last-child {
+  width: 60%;
+  top: 20px;
+  left: auto;
+  right: 0;
+}
+
 .dropdown-toggle::after {
   display:none;
 }
@@ -340,15 +381,17 @@ p.label-content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 9px 6px;
+  padding: 13px 6px;
   border-radius: 14px;
+  gap: 8px;
+  margin-bottom: 90px;
 }
 
-h4.plug {
+h4.plug-text {
   line-height: 0px;
 }
 
-p.plug {
+p.plug-text {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
@@ -420,16 +463,6 @@ h4.label-element {
   gap: 32px;
 }
 
-@media (max-width: 991px) {
-  .solution {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    width: 100%;
-  }
-}
-
 .solution-title {
   display: flex;
   flex-direction: column;
@@ -455,7 +488,6 @@ h4.label-element {
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
-  line-height: 70.5%;
   display: flex;
   align-items: center;
   text-align: center;
@@ -757,6 +789,10 @@ h2.dropdown {
   padding-bottom: 0px;
 }
 
+.portal {
+  margin-bottom: 40px;
+}
+
 .portal:before {
   content: "";
   width: 95%;
@@ -764,7 +800,7 @@ h2.dropdown {
   position: absolute;
   left: 29px;
   z-index: -1;
-  bottom: 50%;
+  bottom: 63%;
   border: 1px dashed #005BDE;
 }
 
@@ -775,4 +811,296 @@ h4.label-text {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+}
+
+@media (max-width: 575px) {
+
+  .service-title {
+    flex-direction: column;
+  }
+
+  .solution {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .solution-item {
+    margin-bottom: 20px;
+  }
+
+  .label-content {
+    flex-direction: column;
+  }
+
+  .DP {
+    flex-direction: column !important;
+  }
+
+  .airline-item {
+    border-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .provide {
+    padding: 20px 17px;
+  }
+
+  h2.airline-title {
+    text-align: start;
+  }
+}
+
+@media (min-width: 1200px)  and (max-width: 1399px) {
+  .dropdown-menu {
+    left: -610px;
+  }
+  .navbar-mobile span {
+    display: none;
+  }
+  .solution-item{
+    height: 300px;
+    gap: 0;
+  }
+  .service-element-title{
+    height: 400px;
+    padding: 50px 20px;
+    margin-top: -25px
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-mobile span {
+    display: none;
+  }
+  .portal{
+    margin-left: -8px;
+  }
+  .portal{
+    bottom: 66%;
+  }
+  .solution-item{
+    height: 300px;
+  }
+  .img-service{
+    height: 278px;
+  }
+  .service-element{
+    margin-bottom: 40px;
+    margin-top: 0px;
+  }
+  .service-element-title{
+    height: 203px;
+    margin-top: -25px;
+    gap: 0px;
+  }
+  h2.element-title{
+    font-size: 36px;
+    line-height: 42px;
+  }
+  h3.element-title{
+    margin: 20px 61%;
+  }
+  p.element-title{
+    font-size: 18px;
+    line-height: 19px;
+    height: 180px;
+  }
+  a.full-service-detail{
+    margin-top: 0px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #navbarCollapse>ul>li>a{
+    justify-content: flex-start;
+  }
+  .navbar-mobile span {
+    display: block;
+  }
+  .dropdown-menu {
+    width: unset;
+  }
+  .dropdown-menu.show {
+    flex-direction: column;
+  }
+  .half-col {
+    padding: 0;
+  }
+  .solution {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .label-content {
+    flex-direction: column;
+  }
+
+  .DP {
+    flex-direction: column !important;
+  }
+
+  .plug {
+    padding: 28px 35px;
+    gap: 8px;
+  }
+
+  h4.plug-text {
+    line-height: 42px;
+    font-size: 36px;
+  }
+
+  .img-service{
+    height: 278px;
+  }
+
+  .service-element {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .service-element-title {
+    height: 278px;
+    padding: 10px 20px;
+    gap: 8px;
+  }
+
+  h3.element-title {
+    margin: 106px 51%;
+  }
+
+  a.full-service-detail {
+    margin-top: 30px !important;
+  }
+  .airline-pic{
+    margin-left: 20px;
+  }
+  .airline-item {
+    margin-bottom: 50px;
+    height: 250px;
+  }
+  .airline-text{
+    margin-left: 10px;
+  }
+  p.airline-text{
+    font-size: 17px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 576px)  {
+  #navbarCollapse>ul>li>a {
+    justify-content: flex-start;
+    padding: 5px;
+  }
+  .navbar-mobile span {
+    display: block;
+  }
+  .service-link {
+    display: none;
+  }
+  .dropdown-menu{
+    width: unset;
+  }
+  .dropdown-menu.show{
+    flex-direction: column;
+  }
+  .half-col{
+    padding: 0;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  h3 {
+    font-size: 64px;
+    line-height: 75px;
+  }
+  h2.title {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .service-detail{
+    gap: 16px;
+  }
+  .service-title {
+    flex-direction: column-reverse;
+    gap: 16px !important;
+  }
+  .line-under-home {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  ul.service-text {
+    font-size: 16px;
+    gap: 8px;
+  }
+  h2.airline-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  } 
+  p.airline-text {
+    font-size: 16px;
+    line-height: 136.5%;
+  }
+  .label-header {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .label-content{
+    margin-right: 0;
+  }
+  .plug {
+    padding: 50px 65px;
+    margin-bottom: 50px;
+  }
+  h4.plug-text{
+    font-size: 36px;
+    line-height: 42px;
+  }
+  p.plug-text{
+    font-weight: 700;
+  }
+  .service-element {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  .img-service {
+    height: 234px;
+  }
+  .service-element-title{
+    padding: 32px;
+    gap: 12px;
+    height: 234px;
+  }
+  h2.element-title{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  h3.element-title{
+    font-size: 128px;
+    line-height: 150px;
+    margin: 60px 45%;
+  }
+  p.element-title{
+    font-size: 16px;
+    line-height: 136.5%;
+  }
+  a.full-service-detail {
+    margin-top: 0 !important;
+  }
+  .back-to-top{
+    margin-right: 25px;
+  }
+  .wow-pay {
+    padding: 7px; 
+    margin-left: -25px;
+  }
 }

@@ -135,3 +135,25 @@ iframe{
 .fill-mobile-number{
     padding-right: 0;
 }
+
+@media (min-width: 350px) and (max-width: 576px)  {
+    .contact-header h1{
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 25px;
+    }
+    .contact-box {
+        padding-bottom: 50px;
+        margin-bottom: 70px;
+    }
+    .btn-send-form {
+        float: none;
+        width: 100%;
+    }
+    .more-info {
+        margin-bottom: 15px;
+    }
+    .btn-footer-contact{
+        margin-top: -19px;
+    }
+}

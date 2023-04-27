@@ -1008,6 +1008,11 @@ h4.label-text {
 }
 
 @media (min-width: 350px) and (max-width: 576px)  {
+  #navbarCollapse {
+    max-height: 700px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+  }
   #navbarCollapse>ul>li>a {
     justify-content: flex-start;
     padding: 5px;

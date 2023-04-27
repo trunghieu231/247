@@ -813,6 +813,12 @@ h2.dropdown {
     font-size: 16px ;
   }
 
+  #navbarCollapse {
+    max-height: 700px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+  }
+
   #navbarCollapse>ul>li>a{
     justify-content: flex-start;
     padding: 5px;
@@ -953,5 +959,9 @@ h2.dropdown {
 
   .network {
     background-image: none !important;
+  }
+
+  .back-to-top {
+    margin-right: 15px;
   }
 }

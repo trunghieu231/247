@@ -351,6 +351,15 @@ h2.label-content {
   color: #005BDE;
 }
 
+h2.label-content2 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 136.5%;
+  color: #005BDE;
+}
+
 p.label-content {
   font-family: 'Lato';
   font-style: normal;
@@ -1056,6 +1065,18 @@ h4.label-text {
   }
   .label-content{
     margin-right: 0;
+  }
+  .portal:before{
+    content: none;
+  }
+  h2.label-content:before {
+    content: "";
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    border: 1px dashed #005BDE;
+    top: 66px;
   }
   .plug {
     padding: 50px 65px;

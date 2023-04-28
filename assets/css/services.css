@@ -954,7 +954,18 @@ h4.label-text {
   .label-content {
     flex-direction: column;
   }
-
+  .portal:before{
+    content: none;
+  }
+  h2.label-content:before {
+    content: "";
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    border: 1px dashed #005BDE;
+    top: 66px;
+  }
   .DP {
     flex-direction: column !important;
   }
